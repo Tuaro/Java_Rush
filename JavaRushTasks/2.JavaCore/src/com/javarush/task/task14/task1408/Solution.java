@@ -15,6 +15,19 @@ public class Solution {
         static Hen getHen(String country) {
             Hen hen = null;
             //напишите тут ваш код
+           if (country.equals(Country.BELARUS)) {
+               hen = new BelarusianHen();
+           }
+            if (country.equals(Country.UKRAINE)) {
+                hen = new UkrainianHen();
+            }
+            if (country.equals(Country.MOLDOVA)) {
+                hen = new MoldovanHen();
+            }
+            if (country.equals(Country.RUSSIA)) {
+                hen = new RussianHen();
+            }
+
             return hen;
         }
     }
